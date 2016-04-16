@@ -8,5 +8,10 @@
             "name": "zed",
             "email": "zedsmail@163.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "zedisdog\\MysqlHandler\\": "src/"
+        }
+    }
 }
