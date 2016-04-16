@@ -24,7 +24,7 @@ class MysqlHandlerServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/config/log.php' => config_path('log.php'),
         ], 'zedisdog/mysqlHandler');
-        $mysqlHandler = new MySQLHandler($db->getPdo(), config('log.table', 'log'), [], Logger::INFO);
+        $mysqlHandler = new MySQLHandler($db->getPdo(), config('log.table', 'log'), [], Logger::DEBUG);
         \Log::getMonolog()->pushHandler($mysqlHandler);
     }
 }
