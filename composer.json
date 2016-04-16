@@ -1,0 +1,12 @@
+{
+    "name": "zedisdog/monolog-database-handler-for-laravel5",
+    "description": "this package helps to save log into database within PDO",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zed",
+            "email": "zedsmail@163.com"
+        }
+    ]
+}
